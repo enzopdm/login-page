@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container h1 {
+  font-size: 3vw;
+  color: #77ffc0;
+}
+
+.text-container img {
+  width: 35vw;
+}
+
+.login-container {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-login {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 30px 35px;
+  background: #2f2841;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.card-login h1 {
+  color: #00ff88;
+  font-weight: 800;
+}
+
+.form-control {
+  width: 100%;
+}
+
+.form-control input {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  background: #514869;
+  font-size: 12px;
+  outline: none;
+  margin: 10px 0;
+  color: #f0ffffde;
+}
+
+.form-control input::placeholder {
+  color: #f0ffff94;
+}
+
+.form-control label {
+  color: #f0ffffde;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: #00ff88;
+  cursor: pointer;
+  box-shadow: 0 10px 40px -12px rgba(0, 0, 0, 0.9);
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background: rgb(0, 255, 136, 0.8);
+}
+
+@media only screen and (max-width: 950px) {
+  .card-login {
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    flex-direction: column-reverse;
+  }
+
+  .text-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-container h1 {
+    display: none;
+  }
+
+  .text-container img {
+    width: 90vw;
+  }
+
+  .login-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-login {
+    width: 80%;
+  }
+}
